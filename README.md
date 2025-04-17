@@ -41,3 +41,40 @@ Thus, the result should be [1, 0].
 - `1 <= digits.length <= 100`
 - `0 <= digits[i] <= 9`
 - The input array does not contain any leading `0`s.
+
+
+
+
+### 2. Alternate Min-Max Rearrangement
+
+Modify a given array of integers so that the first element is the smallest, the second is the largest, the third is the second-smallest, the fourth is the second-largest, and so on.
+
+#### Constraints:
+
+- The input variable `arr` is a list of integers.
+- The length of `arr` can be any non-negative integer.
+- The elements in `arr` can be positive, negative, or zero.
+- There are no specific constraints on the range of values for the elements in `arr`.
+
+#### Examples:
+
+- **Test Case 1:**
+  ```
+  Input: [13, 7, 8, 3, 2, 10, 15, -1]
+  Output: [-1, 15, 2, 13, 3, 10, 7, 8]
+  Description: This test case has a mix of positive and negative integers, which tests the function’s ability to sort and interleave them according to the problem's requirements.
+  ```
+
+- **Test Case 2:**
+  ```
+  Input: [-5, -12, -1, 7, 14, -7, 3, 6]
+  Output: [-12, 14, -7, 7, -5, 6, -1, 3]
+  Description: This case with both negative and positive integers challenges the algorithm to handle interleaving in a more complex array with negative values.
+  ```
+
+- **Test Case 3:**
+  ```
+  Input: [3, 6, 9, -10, -5, -2, 0, 8]
+  Output: [-10, 9, -5, 8, -2, 6, 0, 3]
+  Description: This test case includes negative numbers, positive numbers, and a zero, providing a robust test of the sorting and interleaving mechanism.
+  ```
